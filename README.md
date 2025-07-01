@@ -8,6 +8,7 @@ An alternative to create, track, and link tasks in Obsidian.md.
 2. Use the provided template, or refer to the examples for setup guidance.
 
 Since this uses Obsidian’s callout system, metadata is not required.
+
 However, if you choose to use metadata, it can be anything (text, emojis, etc.) just make sure it’s placed inside the provided `<div>` element.
 
 ## Wishlist
@@ -22,7 +23,7 @@ However, if you choose to use metadata, it can be anything (text, emojis, etc.) 
 
 ## Drawbacks
 - ❌ Cannot be queried like Obsidian Tasks.
-- ❌ Requires a space between a task description and its metadata. (Already done in the template)
+- ❌ Requires a space between a task description and its metadata. (Provided in the template)
 
 ## Inspirations & References 
 - ✨ Obsidian Tasks: https://publish.obsidian.md/tasks/Introduction
