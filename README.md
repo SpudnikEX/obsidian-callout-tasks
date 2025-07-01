@@ -4,7 +4,7 @@ An alternative to create, track, and link tasks in Obsidian.md.
 ![preview](Obsidian%20Tasks%20Examples%20Preview.png)
 
 ## Installation
-1. Copy both files from the `.obsidian/snippets/` directory into your Obsidian vault’s `.obsidian/snippets/` folder.
+1. Copy both `.css` files from the `.obsidian/snippets/` directory into your Obsidian vault’s `.obsidian/snippets/` folder.
 2. Use the provided template, or refer to the examples for setup guidance.
 
 Since this uses Obsidian’s callout system, metadata is not required.
