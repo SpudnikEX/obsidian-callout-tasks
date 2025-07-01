@@ -1,0 +1,52 @@
+/* Resize the callouts when they are used in a list (bullet, number, etc) */
+ul > li > .callout,
+ol > li > .callout {
+	margin-top: 0em; /* vertical spacing before */
+    margin-bottom: 0em; /* Vertical spacing after */
+	padding: 5px; /* vertical size */
+}
+
+/* Resize callouts in nested lists inside another callout */
+.callout ul > li > .callout,
+.callout ol > li > .callout {
+    margin-top: 0em;
+    margin-bottom: 0em;
+    padding: 5px;
+}
+
+/* Resize the content of the callout, when used in a list */
+ul > li > .callout .callout-content,
+ol > li > .callout .callout-content {
+  padding: 0.5em; /* padding for the body of the callout, inside a list */
+}
+
+/* Reposition the dropdown indicator to the front of the callout */
+.callout.is-collapsible .callout-fold {
+    order: -1; /* move to the beginning */
+    margin-right: -0.5em;
+}
+
+/* Format metadata, when using with a callout */
+/* .callout[data-callout="task"] .task-metadata */
+.callout .callout-metadata {
+    margin-top: 0.25em;
+    margin-bottom: 0.5em;
+    font-size: 0.8em;
+    color: var(--text-muted);
+    border-bottom: 1px solid var(--background-modifier-border);
+    padding-bottom: 0.3em;
+}
+
+/* .callout:not(.is-collapsible) .callout-title::before { */
+    /* content: "–";  /* or use "•", " " (space), or even an emoji/icon */ */
+    /* display: inline-block; */
+    /* width: 1em; */
+    /* text-align: center; */
+    /*/*margin-right: -0.5em;*/*/
+    /* color: var(--callout-color); /* Match callout accent color */ */
+    /* font-weight: bold; */
+/* } */
+
+
+
+
