@@ -1,6 +1,8 @@
 # Obsidian Callout Tasks
 An alternative to create, track, and link tasks in Obsidian.md.
 
+![preview](Obsidian%20Tasks%20Examples%20Preview.png)
+
 ## Wishlist
 - [x] Native to Obsidian, no plugins.
 - [x] Title, Custom Metadata, Description.  
