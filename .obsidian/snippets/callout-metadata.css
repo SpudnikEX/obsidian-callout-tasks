@@ -1,0 +1,58 @@
+/* https://forum.obsidian.md/t/callouts-galore-some-callout-css-i-made/63440 */
+/* See https://lucide.dev for full list of icons */
+
+/* made on 230720 by martx @ forum.obsidian.md (: */
+/*- global fixes ------*/
+.callout-icon svg { fill: none; height: var(--icon-size); width: var(--icon-size); stroke-width: var(--icon-stroke) }
+/* .callout[data-callout="tip"], .callout[data-callout="hint"] { --callout-icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lightbulb"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg> } */
+
+/*- default callout colors ------*/
+div[data-callout-metadata*="red"].callout { --callout-color: var(--color-red-rgb) }
+div[data-callout-metadata*="orange"].callout { --callout-color: var(--color-orange-rgb) }
+div[data-callout-metadata*="yellow"].callout { --callout-color: var(--color-yellow-rgb) }
+div[data-callout-metadata*="green"].callout { --callout-color: var(--color-green-rgb) }
+div[data-callout-metadata*="cyan"].callout { --callout-color: var(--color-cyan-rgb) }
+div[data-callout-metadata*="blue"].callout { --callout-color: var(--color-blue-rgb) }
+div[data-callout-metadata*="purple"].callout { --callout-color: var(--color-purple-rgb) }
+div[data-callout-metadata*="pink"].callout { --callout-color: var(--color-pink-rgb) }
+div[data-callout-metadata*="gray"].callout { --callout-color: var(--callout-quote) }
+
+/*- default callout icons -----*/
+div[data-callout-metadata*="-note"].callout, div[data-callout-metadata*="-pencil"].callout { --callout-icon: lucide-pencil }
+div[data-callout-metadata*="-abstract"].callout, div[data-callout-metadata*="-summary"].callout, div[data-callout-metadata*="-tldr"].callout { --callout-icon: lucide-clipboard-list }
+div[data-callout-metadata*="-info"].callout { --callout-icon: lucide-info }
+div[data-callout-metadata*="-todo"].callout { --callout-icon: lucide-check-circle-2 }
+div[data-callout-metadata*="-important"].callout { --callout-icon: lucide-flame }
+div[data-callout-metadata*="-tip"].callout, div[data-callout-metadata*="-hint"].callout { --callout-icon: lucide-flame }
+div[data-callout-metadata*="-success"].callout, div[data-callout-metadata*="-check"].callout, div[data-callout-metadata*="-done"].callout { --callout-icon: lucide-check }
+div[data-callout-metadata*="-question"].callout, div[data-callout-metadata*="-help"].callout, div[data-callout-metadata*="-faq"].callout { --callout-icon: help-circle }
+div[data-callout-metadata*="-warning"].callout, div[data-callout-metadata*="-caution"].callout, div[data-callout-metadata*="-attention"].callout { --callout-icon: lucide-alert-triangle }
+div[data-callout-metadata*="-failure"].callout, div[data-callout-metadata*="-fail"].callout, div[data-callout-metadata*="-missing"].callout { --callout-icon: lucide-x }
+div[data-callout-metadata*="-danger"].callout, div[data-callout-metadata*="-error"].callout { --callout-icon: lucide-zap }
+div[data-callout-metadata*="-bug"].callout { --callout-icon: lucide-bug }
+div[data-callout-metadata*="-example"].callout { --callout-icon: lucide-list }
+div[data-callout-metadata*="-quote"].callout, div[data-callout-metadata*="-cite"].callout { --callout-icon: quote-glyph }
+
+/* Some additions that I have made */
+div[data-callout-metadata*="-none"].callout { --callout-icon: none }
+div[data-callout-metadata*="-shield"].callout { --callout-icon: lucide-shield }
+div[data-callout-metadata*="-sword"], div[data-callout-metadata*="-swords"].callout { --callout-icon: lucide-swords }
+div[data-callout-metadata*="-code"].callout { --callout-icon: lucide-code-xml }
+div[data-callout-metadata*="-server"], div[data-callout-metadata*="-archive"].callout { --callout-icon: lucide-hard-drive } /* lucide-layers */
+div[data-callout-metadata*="-text"], div[data-callout-metadata*="-data"], div[data-callout-metadata*="-desc"].callout { --callout-icon: lucide-text }
+div[data-callout-metadata*="-star"].callout { --callout-icon: lucide-sparkles }
+div[data-callout-metadata*="-clock"], div[data-callout-metadata*="-time"].callout { --callout-icon: lucide-clock }
+div[data-callout-metadata*="-image"].callout { --callout-icon: lucide-image }
+div[data-callout-metadata*="-link"].callout { --callout-icon: lucide-link }
+div[data-callout-metadata*="-web"].callout { --callout-icon: lucide-globe }
+div[data-callout-metadata*="-tech"].callout { --callout-icon: lucide-cpu }
+div[data-callout-metadata*="-progress"], div[data-callout-metadata*="-wait"].callout { --callout-icon: lucide-hourglass }
+
+div[data-callout-metadata*="-tree"].callout { --callout-icon: lucide-tree-pine }
+div[data-callout-metadata*="-dream"], div[data-callout-metadata*="-moon"].callout { --callout-icon: lucide-moon-star }
+div[data-callout-metadata*="-journal"], div[data-callout-metadata*="-notebook"].callout { --callout-icon: lucide-notebook-pen }
+div[data-callout-metadata*="-health"], div[data-callout-metadata*="-med"].callout { --callout-icon: lucide-cross }
+div[data-callout-metadata*="-game"].callout { --callout-icon: lucide-gamepad-2 }
+
+/* Some more additions, to have clear callouts when using them as a list. */
+div[data-callout-metadata*="+clear"].callout { background-color: transparent !important; } /* border-color: transparent !important; */
