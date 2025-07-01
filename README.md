@@ -12,7 +12,7 @@ Since this uses Obsidian’s callout system, metadata is not required.
 However, if you choose to use metadata, it can be anything (text, emojis, etc.) just make sure it’s placed inside the provided `<div>` element.
 
 ## Customization
-Obsidian callouts use built-in icons from [Lucide](https://lucide.dev/), including options like Success, Failure, Quote, and more.
+Obsidian callouts use built-in icons from [Lucide](https://lucide.dev/), including options like Success, Failure, Quote, and more. For a full list of built-in icons, please visit the Lucide website.
 
 If you want to add custom icons, you’ll need to update the `callout-metadata.css` file.
 
