@@ -11,6 +11,13 @@ Since this uses Obsidian’s callout system, metadata is not required.
 
 However, if you choose to use metadata, it can be anything (text, emojis, etc.) just make sure it’s placed inside the provided `<div>` element.
 
+## Customization
+Obsidian callouts use built-in icons from [Lucide](https://lucide.dev/), including options like Success, Failure, Quote, and more.
+
+If you want to add custom icons, you’ll need to update the `callout-metadata.css` file.
+
+You can also use your own SVG icons, but they must be converted to CSS format first.
+
 ## Wishlist
 - [x] Native to Obsidian, no plugins.
 - [x] Title, Custom Metadata, Description.  
@@ -19,7 +26,7 @@ However, if you choose to use metadata, it can be anything (text, emojis, etc.) 
 - [x] Metadata on a seperate line than title.  
 - [x] Formatted for use with lists.
 - [x] Infinite nesting with lists.
-- [x] Custom colors and status icons. 
+- [x] Custom colors and status icons.
 
 ## Drawbacks
 - ❌ Cannot be queried like Obsidian Tasks.
