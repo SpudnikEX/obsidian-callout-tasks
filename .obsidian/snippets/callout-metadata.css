@@ -16,6 +16,8 @@ div[data-callout-metadata*="blue"].callout { --callout-color: var(--color-blue-r
 div[data-callout-metadata*="purple"].callout { --callout-color: var(--color-purple-rgb) }
 div[data-callout-metadata*="pink"].callout { --callout-color: var(--color-pink-rgb) }
 div[data-callout-metadata*="gray"].callout { --callout-color: var(--callout-quote) }
+div[data-callout-metadata*="white"].callout { --callout-color: #ffffff; }
+
 
 /*- default callout icons -----*/
 div[data-callout-metadata*="-note"].callout, div[data-callout-metadata*="-pencil"].callout { --callout-icon: lucide-pencil }
